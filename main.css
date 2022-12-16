@@ -1,0 +1,835 @@
+body {
+    margin: 0;
+    padding: 0; 
+    max-width: 1280px;
+    min-width: 480px;
+    font-family: roboto;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.header {
+    background-color: #011827;
+    width: auto;
+    margin: 0;
+    padding:0;
+}
+
+
+.header-banner {
+    display: flex;
+}
+
+
+.header-logo {
+    height: 90px;
+    width: 136px;
+    margin-top: 26px;
+    margin-left: 27px;
+    font-weight: 700;
+  }
+
+
+.site-heading {
+    color: #FFFFFF;
+    font-family:roboto;
+    font-size: 24px;
+    height:84px;
+    width: 78px;
+    margin-left: 13px;
+    margin-top: 27px;  
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .site-heading {
+      font-size: 40px;
+      margin-left: 24px;
+      margin-top: 61px;
+      
+      width: 20ch;
+    }
+  } 
+
+
+  .open-menu {
+    max-width: 51px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    opacity: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+    background-color: #011827;
+    display: block; 
+  }
+
+
+  .open-menu:hover {
+    cursor: pointer;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .open-menu {
+      display: none;
+    }
+  }
+
+
+  .menu-mobile {
+    background-color: #E3170A;
+    display: none;
+  }
+
+
+  .menu-mobile-show {
+    display: block;
+    animation: menu-appear 0.5s linear backwards, menu-grow 0.5s backwards;
+    list-style: none;
+    background-color:#011827;
+    border-width: 1rem;
+    border-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    place-content:center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    padding-top: 40%;
+    padding-left: 40%;
+    padding-bottom: 15%;
+  }
+
+
+  @keyframes menu-appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes menu-grow {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+
+  .close-menu {
+    display: none;
+   
+  }
+
+
+  .close-menu-show {
+    z-index: 2;
+    position: fixed;
+    right: 2.5rem;
+    top: 2.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url('img/close.svg'); 
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .menu-list {
+    display: none;
+    justify-content: space-evenly;
+    background-color: #011827;
+    list-style: none;
+    padding: 0;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .menu-list {
+      margin: 0;
+      display: flex;
+    }
+  }
+
+
+  .menu-item {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom:  30px;
+  }
+
+
+  .menu-link {
+    text-decoration:none;
+    color: #FFFFFF;
+  }
+
+
+  .menu-link:hover {
+    color: #8ACFE5;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+
+  /* ------------------------------------------------- Slut på header -------------------------------------------*/
+
+  .hacker {
+    margin-top: 0px;
+    margin-left: 0px; 
+    object-fit: cover;
+  }
+
+  /* ------------------------------------------------- Challenge-quote -------------------------------------------*/
+
+  .challenge-quote {
+    justify-items: center;
+    text-align: center;
+  }
+
+
+  .challenge-button-on-site-top {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #011827;
+    text-decoration: none;
+    background-color: #8ACFE5;
+    border-radius: 4px;
+    width:15ch;
+    padding: 19px 53px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 30px;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .challenge-button-on-site-top {
+      bottom: 35px;
+      left: 50%;
+      margin: 0;
+      position: relative;
+    }
+  }
+
+
+  .challenge-button-online-top {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #36769D;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .challenge-button-online-top {
+      font-size: 24px;
+      border-radius: 4px;
+      padding: 19px 57px;
+     
+      padding-bottom: 19px;
+      padding-top: 19px;
+      text-decoration: none;
+      background-color: #E3170A;
+      color: #FFFFFF;
+      position: relative;
+      bottom: 83px;
+      left: -170px; 
+    }
+  }
+
+
+  .pop-chall {
+    font-size: 36px;
+    font-weight: 400;
+    text-align:center;
+    margin-bottom: 0;
+  }
+
+  
+  .reviews {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+    list-style: none;
+    max-width: 30%;
+  }
+
+
+  .customer-review {
+    padding: 20px;
+    margin-left: 13rem;
+    align-content: center;
+  }
+
+
+  .customer-review-2 {
+    display: none;
+  }
+
+
+  @media  screen and (min-width: 800px)  {
+    .customer-review-2 {
+      display: flex;
+      padding: 20px;
+    }
+  }
+
+
+  .customer-review-card {
+    display: flex;
+    text-align: left;
+    max-width: 60%;
+  }
+
+
+  .customer-review-card-quote {
+    margin: 0;
+    /*max-width: 75ch;*/
+    padding-right: 10px;
+  }
+
+
+  .customer-review-card-cite {
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    /*max-width: 75ch;*/
+    padding-right: 10px;
+  }
+
+
+  .customer-review-card-picture {
+    padding-right: 10px;
+    width: 30vh;
+    /*margin-left: 2vh;*/
+  }
+
+
+  .customer-review-card-picture-small {
+    margin-left: 0;
+  }
+
+ 
+  .customer-review-card-cite {
+    font-size: 24px;
+  }
+
+
+  .customer-review-card-name {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .customer-review-card-name {
+      margin-top: 10px;
+      max-width: 30ch;
+    }
+  }
+
+  /* ----------------------------------------------- Popular challenges right now ----------------------------------*/
+
+  
+  .rooms {
+    display: flex;
+    overflow: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .rooms {
+      margin-bottom: 100px;
+    }
+  }
+
+
+  .rooms::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .popular-challenges {
+    display: flex;
+    margin-left: 53px;
+  }
+
+
+  .hacker-card {
+    width: 363px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+
+  .card {
+    margin-right: 42px;
+    height: 446px;
+    width: 363px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  
+  .room-heading {
+    margin-left: 17px;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+  }
+
+
+  .review-stars-participants {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-left: 12px;
+   
+  }
+
+
+  .review-star {
+    margin-left: 8px;
+  }
+
+
+  .number-of-participants {
+    margin-left: 127px;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+
+  .room-description {
+    font-family: roboto;
+    font-size: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+
+  .book-this-room-button {
+  border-radius: 4px;
+  font-family: roboto;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  width:180px;
+  height: 44px;
+  text-decoration: none;
+  padding: 12px 34px;
+  background-color: #E3170A;
+  position: relative;
+  left: 173px;
+  bottom: -20px;
+  }
+
+  /*------------------------------------------------ Knappar, bottom --------------------------------------*/
+
+  .buttons-bottom {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .challenge-button-on-site-bottom {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #011827;
+    text-decoration: none;
+    background-color: #8ACFE5;
+    border-radius: 4px;
+    width:15ch;
+    padding: 19px 53px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 37px;
+    margin-bottom: 30px;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .challenge-button-on-site-bottom {
+      bottom: 35px;
+      left: 50%;
+      margin: 0;
+      position: relative;
+    }
+  }
+
+
+  .challenge-button-online-bottom {
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #36769D;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .challenge-button-online-bottom {
+      font-size: 24px;
+      border-radius: 4px;
+      padding: 19px 57px;
+      padding-bottom: 19px;
+      padding-top: 19px;
+      text-decoration: none;
+      background-color: #E3170A;
+      color: #FFFFFF;
+      position: relative;
+      bottom: 83px;
+      left: -170px;
+    }
+  }
+  
+/* ------------------------------------------------ Slut, knappar ----------------------------------------- */
+
+
+  .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#011827;
+    color: white;
+    padding: 4rem 4rem;
+    margin-top: 3vh;
+    height: 17rem;
+  }
+
+
+  .story-text {
+    max-width: 30rem;
+    text-align:center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    }
+
+
+    .btn-story {
+      border: 2px solid;
+      border-color:#8ACFE5;
+      color:#8ACFE5;
+      background-color: transparent;
+      border-radius: 4px;
+      padding: 15px 40px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+
+  /* --------------------------------------------------------- Play-top -------------------------- */
+
+    .play-top {
+      display: block;
+    }
+
+
+    .people {
+      height: 20rem;
+      width: 100vh;
+      object-fit: cover;
+    }
+
+
+    .play-friends {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+
+    .description {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+
+    .book-on-site {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-top: 1rem;
+      color:white;
+      background-color: #E3170A;
+      border-radius: 4px;
+      padding: 18px 45px;
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+
+    @media screen and (min-width: 800px) {
+      .play-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+      }
+
+
+      .people {
+        grid-row: span 3;
+        height: auto;
+        width: 60vh;
+      }
+
+
+      .play-friends {
+        margin-left: 4rem;
+        grid-row: span 1;
+        margin-top:3rem;
+        margin-bottom: 0;
+        padding: 5rem;
+        margin-top: 1rem;
+        
+      }
+
+
+      .description {
+        margin-left: 4rem;
+        grid-row: span 1;
+        padding-top: 0rem;
+        margin-top: -11rem;
+        padding: 5rem;
+      }
+
+
+      .book-on-site {
+        font-size: 18px;
+        width: 25vh;
+        height: 5vh;
+        grid-row: span 1;
+        margin-left: 9rem;
+        margin-top: -6rem;
+      }
+    }
+
+    /* --------------------------------------------------- Play-bottom ---------------------------------*/
+
+
+    .play-bottom {
+      display: block;
+      margin-top: 3rem;
+    }
+
+
+    .play-online {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+
+    .description_2 {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+
+    .see-all-challenges {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-top: 1rem;
+      color:white;
+      background-color: #E3170A;
+      border-radius: 4px;
+      padding: 18px 45px;
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+
+    @media screen and (min-width: 800px) {
+      .play-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        margin-top: 0;
+      }
+
+
+      .woman {
+        grid-row: span 3;
+        grid-column: 3 / span 1;
+        height: auto;
+        width: 55.5vh;
+      }
+
+
+      .play-online {
+        margin-left: 4rem;
+        grid-row: span 1;
+        grid-column: span 2;
+        padding: 5rem;
+        margin-top: -28rem;
+      }
+
+
+      .description_2 {
+        margin-left: 4rem;
+        grid-row: span 1;
+        grid-column: span 2;
+        margin-top: -16rem;
+        padding: 5rem;
+        padding-top: 1rem;
+      }
+
+
+      .see-all-challenges {
+        font-size: 18px;
+        width: 25vh;
+        height: 5vh;
+        grid-row: span 1;
+        margin-left: 9rem;
+        margin-top: -8rem;
+      }
+    }
+
+
+/*--------------------- Footer -----------------------------------------*/
+
+.footer {
+  display: block;
+  background-color: #011827;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.para-footer {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.footer-summary {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+}
+
+
+.footer-sitemap {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
+
+.sitemap-list {
+  list-style: none;
+  margin-left: -80px;
+}
+
+
+.sitemap-link {
+  text-decoration:none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.sitemap-link:hover {
+  color: #8ACFE5;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+
+.footer-social {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-weight: 700;
+  padding-bottom: 0rem;
+}
+
+
+.social-list {
+  list-style: none;
+  margin-left: -80px;
+}
+
+
+.social-link {
+  text-decoration:none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.social-link:hover {
+  color: #8ACFE5;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: flex;
+    margin-top: 0;
+  }
+
+
+  .footer-summary {
+    margin-left: 5rem;
+    padding-right: 3rem;
+  }
+
+
+  .para-footer {
+    width: 30rem;
+    padding-right: 3rem;
+  }
+
+
+  .footer-sitemap {
+    padding-right: 8rem;
+  }
+}
+
+
+    
+
+  
